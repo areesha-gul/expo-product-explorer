@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+  import { StatusBar } from 'expo-status-bar';
+  import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  export default function App() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.title}>Expo Product Explorer</Text>
+        <Text style={styles.info}>Name: Areesha Gul</Text>
+        <Text style={styles.info}>Roll No: I23-3080</Text>
+        <StatusBar style="auto" />
+      </View>
+    );
+  }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    title: { fontSize: 24, fontWeight: 'bold', marginBottom: 12 },
+    info: { fontSize: 18, marginVertical: 2 },
+  });
