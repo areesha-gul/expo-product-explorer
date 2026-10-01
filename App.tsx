@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { FlashList } from '@shopify/flash-list';
-  const brokenNumber: number = "this is a string, not a number";
+
 type Product = { id: string; name: string; price: number };
 
 const PRODUCTS: Product[] = [
